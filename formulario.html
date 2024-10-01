@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+	<meta charset=utf-8 />
+	<meta name=viewport content='width=1280px, initial-scale=1' />
+	<meta name=author content='David Silva <dsilvavega.guadalupe@alumnado.fundacionloyola.net' />
+	<title>Ejercicio de formulario</title>
+	<link rel=stylesheet href=css/formulario.css />
+</head>
+<body>
+	<header> <!-- Cabecera con imagen de fondo -->
+		<h1>Ejercicio de formulario</h1>
+	</header>
+	
+	<nav> <!-- Barra donde irán los enlaces a otras páginas del proyecto -->
+		<div>
+			<!-- <a href="index.html">Inicio</a> 
+			<a href="articulo.html">Artículo</a>
+			<a href="formulario.html">Formulario</a>-->
+		</div>
+	</nav>
+
+	<main>
+		<h1>Formulario</h1>
+
+		<form action="formulario.php" method="GET" class="general">
+			<fieldset>
+				<legend class="encabezado">Contacto</legend><br>
+			
+				<label for="nombre">Nombre: </label>
+				<input type="text" id="nombre" name="nombre"><br><br>
+			
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" id="apellidos" name="apellidos"><br><br>
+			
+				<label for="nacimiento">Fecha de nacimiento: </label>
+				<input type="date" id="nacimiento" name="nacimiento"><br><br>
+			
+				<label for="telefono">Teléfono: </label>
+				<input type="tel" id="telefono" name="telefono"><br><br>
+			
+				<label for="email">E-Mail: </label>
+				<input type="email" id="email" name="email"><br><br>
+			
+				<label for="perfil">Perfil: </label>
+				<select name="perfil" id="perfil">
+					<option value="alumno">Alumno</option>
+					<option value="profesor">Profesor</option>
+				</select><br><br>
+				
+				<label for="curso">Curso: </label><br><br>
+					<input type="radio" name="curso" id="1" value="primero">
+					<label for="1">1º</label><br>
+					
+					<input type="radio" name="curso" id="2" value="segundo">
+					<label for="2">2º</label><br><br>
+			
+				<label>Selecciona los deportes que practicas: </label><br><br>
+					<input type="checkbox" name="deportes[]" value="Fútbol">
+					<label>Fútbol</label><br>
+					
+					<input type="checkbox" name="deportes[]" value="Baloncesto">
+					<label>Baloncesto</label><br>
+					
+					<input type="checkbox" name="deportes[]" value="Natación">
+					<label>Natación</label><br>
+					
+					<input type="checkbox" name="deportes[]" value="Tenis">
+					<label>Tenis</label><br>
+					
+									
+				<input type="submit" value="Enviar">
+			</fieldset>
+		</form>
+	</main>
+</body>
+
+</html>

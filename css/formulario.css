@@ -1,0 +1,74 @@
+/*Autor: David Silva Vega - 2º DAW (2024/2025) - Escuela Virgen de Guadalupe*/
+
+/*Este es el estilo que tendrá por defecto toda la página*/
+body{
+	font-family: Verdana, sans-serif; /*Esta es la fuente elegida para la web*/
+	background-color: #ccdbfd; /*Color por defecto para el fondo. Azul claro*/
+	margin: 0 auto; /*Quito por defecto todos los márgenes que puedan haber*/
+	max-width: 1280px; /*Resolución exigida: 1280px*/
+}
+
+/*Cabecera del contenido. Es igual que en articulo.css*/
+header{
+	background-image: url('../img/portada2.jpg');
+	height: 125px;
+	text-align: center;
+}
+
+/*Estilo del h1 dentro de la etiqueta header*/
+header > h1 {
+	margin-block: 0px 0px; /* Sin este comando, me creaba un espacio por 
+							encima de la imagen en chrome*/
+	line-height: 125px; /* Mismo tamaño que la imagen del header*/
+	font-size: 2em; /* Aumenta el tamaño de la fuente, ajustado al tamaño de la imagen */
+	color: white; /* Color blanco para hacer contraste */
+	
+	/* Pongo sombra para resaltar ligeramente el texto */
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+	
+	/* Para oscurecer la imagen y que se distingan las letras */
+	background-color: rgba(0, 0, 0, 0.5); 
+
+}
+
+/*Igual que en articulo.css*/
+header > img {
+	height: 125px;
+	width: 1280px;
+}
+
+/*nav, div y a funcionan igual que en el caso de index.css*/
+nav{
+	background-color: #2a5791;
+	height: 30px;
+}
+
+div{
+	height: 30px;
+}
+
+a{
+	color: white; 
+	line-height: 30px; 
+	text-decoration: none; 
+	font-weight: bold; 
+	padding: 3.5px 15px; 
+}
+
+/*Al igual que en articulo.css, el centro del main va en un azul más oscuro*/
+main{
+	background-color: #8da9c4; /*Color de un azul más oscuro que el del body, pero distinto de nav*/
+	padding: 50px; /*Espaciado entre el texto y el borde del main*/
+	color: #2a5791; /*Color de texto blanco, como en el resto de la página*/
+	/*font-weight: bold;*/ /*Estilo negrita*/
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; /*Cambio de fuente respecto a la cabecera*/
+	max-width: 768px; /*Ancho del contenedor*/
+	margin: auto; /*Espacio a los lados para centrar el contenedor de manera horizontal */
+
+}
+
+/*El texto que indica el formulario*/
+main > h1{
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
