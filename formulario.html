@@ -13,18 +13,15 @@
 		<h1>Ejercicio de formulario</h1>
 	</header>
 	
-	<nav> <!-- Barra donde irán los enlaces a otras páginas del proyecto -->
+	<nav> 
 		<div>
-			<!-- <a href="index.html">Inicio</a> 
-			<a href="articulo.html">Artículo</a>
-			<a href="formulario.html">Formulario</a>-->
 		</div>
 	</nav>
 
 	<main>
 		<h1>Formulario</h1>
 
-		<form action="formulario.php" method="GET" class="general">
+		<form action="formulario.php" method="POST" class="general">
 			<fieldset>
 				<legend class="encabezado">Contacto</legend><br>
 			
@@ -67,10 +64,11 @@
 					<label>Natación</label><br>
 					
 					<input type="checkbox" name="deportes[]" value="Tenis">
-					<label>Tenis</label><br>
+					<label>Tenis</label><br><br>
 					
 									
 				<input type="submit" value="Enviar">
+				<input type="reset" value="Reiniciar">
 			</fieldset>
 		</form>
 	</main>
